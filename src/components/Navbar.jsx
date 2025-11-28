@@ -27,32 +27,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="hidden md:flex  lg:flex  gap-10 my-4   ">
-        {/* <NavLink
-          className={({ isActive }) => (isActive ? "text-green-400" : "")}
-          to="/"
-        >
-          Home
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? "text-green-400" : "")}
-          to="/menu"
-        >
-          Menu
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? "text-green-400" : "")}
-          to="/about"
-        >
-          About
-        </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? "text-green-400" : "")}
-          to="/contact"
-        >
-          Contact
-        </NavLink> */}
-
+      <div className="hidden md:flex relative lg:flex  gap-10 my-4   ">
         <NavLink
           to="/"
           className={({ isActive }) =>
@@ -108,10 +83,10 @@ const Navbar = () => {
       }
 
       {open && (
-        <div className="md:hidden flex flex-col justify-center items-center bg-[#f4e4e6] gap-10  my-4 z-10 w-[250px] h-[300px] shadow-blue-600  rounded-xl ">
+        <div className="md:hidden absolute top-10  left-10 flex flex-col justify-center items-center bg-[#f4e4e6] gap-10  my-1 z-10 w-[250px] h-[300px] shadow-blue-600  rounded-xl ">
           <NavLink
-            className={({ isActive }) => (isActive ? "text-green-400" : "")}
             to="/"
+            className={({ isActive }) => `${isActive ? "text-green-400" : ""} `}
           >
             Home
           </NavLink>

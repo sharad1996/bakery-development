@@ -34,18 +34,42 @@ import sweet5 from "./src/assets/sweets/sweet5.jpg";
 
 import sweet6 from "./src/assets/sweets/sweet6.jpg";
 
-
 import bakery1 from "./src/assets/bakery/bakery1.jpg";
 
-import bakery2 from "./src/assets/bakery/bakery2.jpg" ;
+import bakery2 from "./src/assets/bakery/bakery2.jpg";
 
-import bakery3 from "./src/assets/bakery/bakery3.jpeg" ;
+import bakery3 from "./src/assets/bakery/bakery3.jpeg";
 
-import bakery4 from "./src/assets/bakery/bakery4.jpeg" ;
+import bakery4 from "./src/assets/bakery/bakery4.jpeg";
 
-import bakery5 from "./src/assets/bakery/bakery5.jpeg" ;
+import bakery5 from "./src/assets/bakery/bakery5.jpeg";
 
-import bakery6 from "./src/assets/bakery/bakery6.jpeg" ;
+import bakery6 from "./src/assets/bakery/bakery6.jpeg";
+
+
+
+import aboutitem1 from "./src/assets/aboutitem1.jpg";
+import aboutitem2 from "./src/assets/aboutitem2.jpg";
+import aboutitem3 from "./src/assets/aboutitem3.jpg";
+import aboutitem4 from "./src/assets/aboutitem4.jpg" ;
+import { FaHandsPraying } from "react-icons/fa6";
+
+
+import { FaCircleDot } from "react-icons/fa6";
+import { FaLeaf } from "react-icons/fa";
+import { FaHands } from "react-icons/fa";
+import { IoFastFood } from "react-icons/io5";
+
+import { IoHome } from "react-icons/io5";
+
+
+import aboutsec1 from "./src/assets/aboutsection1.jpg";
+
+import aboutsec2 from "./src/assets/aboutsection2.jpg";
+
+import aboutsec3 from "./src/assets/aboutsection3.jpg";
+
+import aboutsec4 from "./src/assets/aboutsection4.jpg";
 
 
 
@@ -188,57 +212,224 @@ const SweetDummyApi = [
   },
 ];
 
-
-
-
 const BakeryDummyApi = [
+  {
+    id: "1",
+    name: "Bakery1",
+    image: bakery1,
+    price: "$67",
+    description: "This is a Bakery1 product.",
+  },
 
-     {
-        id:"1",
-        name:"Bakery1",
-        image:bakery1,
-        price:"$67",
-        description:"This is a Bakery1 product."
-     },
+  {
+    id: "2",
+    name: "Bakery2",
+    image: bakery2,
+    price: "$67",
+    description: "This is a Bakery2 product.",
+  },
 
-     {
+  {
+    id: "3",
+    name: "Bakery3",
+    image: bakery3,
+    price: "$78",
+    description: "This is a Bakery3 product.",
+  },
+  {
+    id: "4",
+    name: "Bakery4",
+    image: bakery4,
+    price: "$90",
+    description: "This is a Bakery4 product.",
+  },
+
+  {
+    id: "5",
+    name: "Bakery5",
+    image: bakery5,
+    price: "$100",
+    description: "This is a Bakery5 product",
+  },
+  {
+    id: "6",
+    name: "Bakery6",
+    image: bakery6,
+    price: "$300",
+    description: "This is a Bakery6 Product",
+  },
+];
+
+const AboutDataCard = [
+  {
+    id: "1",
+    name: "Mumbai Pav Bhaji",
+    image:aboutitem1,
+    description:
+      "A velvety mash of spiced vegetables crowned with a dollop of golden butter, paired with fluffy, butter-toasted pav, and a squeeze of zesty lime - Mumbai’s ultimate indulgence.",
+  },
+  {
+    id: "2",
+    name: "Kolkata Club Kachori",
+    image:aboutitem2,
+    description:
+      "Crisp, flaky kachoris filled with a spiced lentil stuffing, served with a rich, aromatic aloo sabzi - every bite is a burst of Bengal’s culinary charm.",
+  },
+  {
+    id: "3",
+    name: "Chole Bhature",
+    image:aboutitem3,
+    description:
+      "Pillowy, golden-fried bhature paired with tangy, slow-cooked chickpeas, kissed with spices and garnished with fresh coriander - a North Indian classic worth savoring.",
+  },
+  {
+    id:"4",
+    name:"Jinni Dosa",
+    image:aboutitem4,
+    description:"A vibrant South Indian masterpiece loaded with creamy cheese, spicy masala, and veggies, rolled to perfection and served with a side of tangy chutneys—street food elevated!"
+
+
+  }
+];
+
+const AboutDataCard2 =[
+
+    {
+       id:"1",
+       image:FaCircleDot,
+       name:"Recipes That Will Keep You Visiting Us",
+       description:"100 % Authentic Indian recipes that are made just like home."
+    },
+    {
         id:"2",
-        name:"Bakery2",
-        image:bakery2,
-        price:"$67",
-        description:"This is a Bakery2 product."
-     },
+        image:FaLeaf,
+        name:"Vegan & Vegetarian Options",
+        description:"Deliciously inclusive for every lifestyle and preference."
+    },
+    {
+      id:"3",
+      image:FaHands,
+      name:"Handcrafted Indian Sweets",
+      description:"From jalebi, kaju katli, to luscious mawa mithais, we sweeten every celebration."
 
-     {
-         id:"3",
-         name:"Bakery3",
-         image:bakery3,
-         price:"$78",
-         description:"This is a Bakery3 product."
-     },
-     {
+    },
+    {
        id:"4",
-       name:"Bakery4",
-       image:bakery4,
-       price:"$90",
-       description:"This is a Bakery4 product."
-     },
-
-     {
+       image:IoFastFood,
+       name:"Come for Food, Stay for Atmosphere",
+       description:"Spacious seating, clean environment, and comfort for all ages."
+    },
+    {
       id:"5",
-      name:"Bakery5",
-      image:bakery5,
-      price:"$100",
-      description:"This is a Bakery5 product"
-
-     },
-     {
-        id:"6",
-        name:"Bakery6",
-        image:bakery6,
-        price:"$300",
-        description:"This is a Bakery6 Product"
-     }
+      image:IoHome,
+      name:"Home Delivery Available",
+      description:"Get the best Indian food in Dubai delivered hot and fresh to your door."
+    },
+    {
+      id:"6",
+      image:FaHandsPraying,
+      name:"Friendly, Multilingual Staff",
+      description:"We speak your language with a smile."
+    }
 ]
 
-export { SnackDummyApi, NamkeenDummyApi, SweetDummyApi,BakeryDummyApi };
+
+const AboutDataCard3 = [
+    {
+       id:"1",
+       image:aboutsec1
+    },
+    {
+      id:"2",
+      image:aboutsec2
+    },
+    {
+      id:"3",
+      image:aboutsec3
+    },
+    {
+      id:"4",
+      image:aboutsec4
+    }
+]
+
+
+
+const AboutDataCard4 =[
+    {
+      id:'1',
+      name:"10+",
+      description:"YEARS EXPERIENCE"
+    },
+    {
+      id:"2",
+      name:"3+",
+      description:"NEW BRANCHES"
+    },
+    {
+      id:"3",
+      name:"500+",
+      description:"POSITIVE REVIEWS"
+    },
+    {
+      id:"4",
+      name:"100+",
+      description:"TEAM MEMBERS"
+    }
+]
+
+
+const TestimonalData = [
+    {
+       id:"1",
+       description:"Gangour Restaurant deserves a full five-star rating! We tried the pucchka and sitafal pudding, and both were outstanding. The pucchka was bursting with flavor and had the perfect crunch, while the sitafal pudding was a delightful, creamy treat that beautifully balanced sweetness and texture. The ambiance was warm and inviting, and the service was excellent. Highly recommend this place for anyone looking to enjoy authentic indian snacks in dubai and delicious dishes!					",
+       author:"Amrita Dugad"
+    },
+    {
+      id:"2",
+      description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+      author:"Mehrukh Ibrahim"
+    },
+    {
+       id:"3",
+       description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+       author:"Purnendu Sinha"
+    },
+    {
+      id:"4",
+      description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+      author:"Shadab Ahmer"
+   },
+   {
+    id:"5",
+    description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+    author:"CYNERA DEMELO"
+   },
+   {
+    id:"6",
+    description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+    author:"SAROJ KUMAR MAHAPATRA"
+   },
+   {
+    id:"7",
+    description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+    author:"ADITYA BHATIA"
+  },
+  {
+    id:"8",
+    description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+    author:"SANJEEV GUPTA"
+ },
+ {
+  id:"9",
+  description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+  author:"ALLWYN ALMEIDA"
+},
+{
+  id:"10",
+  description:"Fresh flavors bring people together, creating unforgettable moments around every meal. From bright spices to comforting textures, every bite tells a story of love, culture, and celebration. Good food warms the heart, inspires joy, and turns ordinary days into cherished memories.",
+  author:"SHADAB KHAN"
+}
+]
+
+export { SnackDummyApi, NamkeenDummyApi, SweetDummyApi, BakeryDummyApi,AboutDataCard,AboutDataCard2,AboutDataCard3,AboutDataCard4,TestimonalData};
